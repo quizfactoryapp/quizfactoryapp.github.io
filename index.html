@@ -3,433 +3,580 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="資格試験 過去問・予想問題の無料学習アプリ。42種類の資格に対応。合格ドリルシリーズ。iOS/Android/Web対応。">
-    <meta name="keywords" content="資格試験,過去問,合格ドリル,学習アプリ,無料,予想問題">
-    <meta property="og:title" content="資格試験 過去問 合格ドリル - 42資格対応 無料学習アプリ">
-    <meta property="og:description" content="資格試験の過去問・予想問題を無料で体験。42種類の資格に対応した合格ドリルシリーズ。">
+    <meta name="description" content="資格試験の過去問・予想問題を無料で解ける学習アプリ。宅建・簿記・FP・ITパスポート・基本情報・行政書士・社労士など42種類の過去問/予想問題ドリルに対応。iOS/Android/Web 対応。">
+    <meta name="keywords" content="過去問,予想問題,資格試験,過去問アプリ,予想問題集,無料過去問,無料予想問題,宅建 過去問,宅建 予想問題,簿記 過去問,簿記 予想問題,FP 過去問,FP 予想問題,ITパスポート 過去問,基本情報 過去問,応用情報 過去問,行政書士 過去問,社労士 過去問,ケアマネ 過去問,看護師 過去問,TOEIC 予想問題,英検 過去問,危険物乙4 過去問,電気工事士 過去問,運転免許 過去問,合格ドリル,模擬試験">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+    <meta name="theme-color" content="#0b1020">
+    <meta property="og:title" content="QuizFactory | 資格試験 過去問・予想問題アプリ 42種類対応・無料">
+    <meta property="og:description" content="宅建・簿記・FP・ITパスポートなど42種類の資格試験 過去問と予想問題を無料で解ける学習アプリ集。iOS/Android/Web 対応。">
     <meta property="og:url" content="https://quizfactoryapp.github.io/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="QuizFactory">
     <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QuizFactory | 資格試験 過去問・予想問題アプリ 42種類対応・無料">
+    <meta name="twitter:description" content="宅建・簿記・FP・ITパスポートなど42種類の資格試験 過去問と予想問題を無料で解ける学習アプリ集。">
     <link rel="canonical" href="https://quizfactoryapp.github.io/">
-    <title>資格試験 過去問 合格ドリル - 42資格対応 無料学習アプリ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>QuizFactory | 資格試験 過去問・予想問題アプリ 無料 - 宅建・簿記・FP・ITパスポートなど42種類</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://quizfactoryapp.github.io/#website",
+          "url": "https://quizfactoryapp.github.io/",
+          "name": "QuizFactory",
+          "description": "資格試験の過去問と予想問題を無料で解ける学習アプリ集",
+          "inLanguage": "ja",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://quizfactoryapp.github.io/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://quizfactoryapp.github.io/#org",
+          "name": "QuizFactory",
+          "url": "https://quizfactoryapp.github.io/"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "過去問・予想問題アプリは無料で使えますか?",
+              "acceptedAnswer": {"@type":"Answer","text":"はい。QuizFactory の Web 版は 42 種類すべての資格で過去問と予想問題を無料で解くことができます。インストールも会員登録も不要です。"}
+            },
+            {
+              "@type": "Question",
+              "name": "どんな資格の過去問・予想問題が収録されていますか?",
+              "acceptedAnswer": {"@type":"Answer","text":"宅建、簿記 (1〜3級)、FP (2級/3級)、ITパスポート、基本情報技術者、応用情報技術者、行政書士、社労士、ケアマネ、看護師、TOEIC、英検、危険物乙4、電気工事士 2 種など、全 42 種類の資格試験について過去問・予想問題ドリルを収録しています。"}
+            },
+            {
+              "@type": "Question",
+              "name": "過去問と予想問題の違いは何ですか?",
+              "acceptedAnswer": {"@type":"Answer","text":"過去問は本試験で実際に出題された問題、予想問題は出題傾向を分析して作成したオリジナル問題です。QuizFactory では両方を組み合わせて収録しており、過去問で傾向を掴みつつ予想問題で本番形式のアウトプット練習ができます。"}
+            },
+            {
+              "@type": "Question",
+              "name": "スマホだけで過去問・予想問題を解けますか?",
+              "acceptedAnswer": {"@type":"Answer","text":"はい。スマートフォンのブラウザから各資格ページを開くだけで、スキマ時間に過去問と予想問題を解けます。iOS / Android 用のネイティブアプリもストアで配信中です。"}
+            }
+          ]
+        }
+      ]
+    }
+    </script>
     <style>
-      * { margin:0; padding:0; box-sizing:border-box; }
-      body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#F0F4F8; color:#1E293B; }
-      .hero { background:linear-gradient(135deg,#1D4ED8,#7C3AED); color:#fff; padding:60px 20px; text-align:center; }
-      .hero h1 { font-size:28px; margin-bottom:12px; }
-      .hero p { font-size:16px; opacity:0.9; max-width:600px; margin:0 auto; }
-      .hero .badge { display:inline-block; background:rgba(255,255,255,0.2); padding:6px 16px; border-radius:20px; margin-top:16px; font-size:14px; }
-      .container { max-width:900px; margin:0 auto; padding:24px 16px; }
-      .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
-      .card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.08); transition:transform 0.2s; }
-      .card:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,0.12); }
-      .card-color { height:4px; }
-      .card-body { padding:16px; }
-      .card h2 { font-size:16px; margin-bottom:4px; }
-      .card h2 a { color:#1E293B; text-decoration:none; }
-      .card h2 a:hover { color:#2563EB; }
-      .exam-name { font-size:13px; color:#64748B; margin-bottom:8px; }
-      .desc { font-size:13px; color:#94A3B8; margin-bottom:12px; }
-      .store-links { display:flex; gap:6px; flex-wrap:wrap; }
-      .store-btn { display:inline-block; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; text-decoration:none; }
-      .store-btn.ios { background:#000; color:#fff; }
-      .store-btn.gp { background:#34A853; color:#fff; }
-      .store-btn.web { background:#2563EB; color:#fff; }
-      footer { text-align:center; padding:32px; color:#94A3B8; font-size:13px; }
-      footer a { color:#64748B; }
+      :root {
+        --bg: #0b1020;
+        --surface: rgba(255,255,255,0.04);
+        --surface-hover: rgba(255,255,255,0.08);
+        --border: rgba(255,255,255,0.08);
+        --border-strong: rgba(255,255,255,0.18);
+        --text: #e6ebf5;
+        --text-soft: #9aa3b8;
+        --text-dim: #6b7488;
+        --accent: #7c9bff;
+        --accent-2: #b084ff;
+        --accent-3: #38d4c0;
+        --shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      a { color: inherit; text-decoration: none; }
+
+      .aurora {
+        position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none;
+        background:
+          radial-gradient(60% 50% at 20% 10%, rgba(124,155,255,0.25), transparent 60%),
+          radial-gradient(40% 40% at 85% 15%, rgba(176,132,255,0.22), transparent 60%),
+          radial-gradient(50% 50% at 50% 100%, rgba(56,212,192,0.18), transparent 60%),
+          var(--bg);
+      }
+      .aurora::after {
+        content: "";
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+        background-size: 48px 48px;
+        mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      }
+
+      .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+      header.nav {
+        position: sticky; top: 0; z-index: 30;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        background: rgba(11,16,32,0.6);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.01em; }
+      .brand-mark {
+        width: 28px; height: 28px; border-radius: 8px;
+        background: conic-gradient(from 210deg, var(--accent), var(--accent-2), var(--accent-3), var(--accent));
+        box-shadow: 0 6px 20px -8px var(--accent);
+      }
+      .brand-name { font-size: 17px; }
+      .brand-name span { color: var(--accent); }
+      .nav-links { display: flex; gap: 18px; font-size: 14px; color: var(--text-soft); }
+      .nav-links a:hover { color: var(--text); }
+      @media (max-width: 620px) { .nav-links { display: none; } }
+
+      .hero { padding: 96px 0 56px; text-align: center; }
+      .eyebrow {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 6px 14px;
+        border: 1px solid var(--border-strong);
+        background: var(--surface);
+        border-radius: 999px;
+        font-size: 12px; letter-spacing: 0.08em;
+        color: var(--text-soft);
+        text-transform: uppercase;
+      }
+      .eyebrow .dot {
+        width: 6px; height: 6px; border-radius: 50%;
+        background: var(--accent-3);
+        box-shadow: 0 0 12px var(--accent-3);
+      }
+      .hero h1 {
+        margin: 22px auto 18px;
+        font-family: "Noto Sans JP", "Inter", sans-serif;
+        font-weight: 800;
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        max-width: 900px;
+      }
+      .hero h1 .grad {
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 50%, var(--accent-3) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .hero p { margin: 0 auto; max-width: 680px; color: var(--text-soft); font-size: 17px; }
+      .hero-cta { margin-top: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 12px 22px;
+        border-radius: 999px;
+        font-weight: 600; font-size: 14px;
+        transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+        border: 1px solid var(--border-strong);
+        background: var(--surface);
+      }
+      .btn:hover { background: var(--surface-hover); transform: translateY(-1px); }
+      .btn.primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        border-color: transparent;
+        color: #0b1020;
+        box-shadow: 0 10px 30px -10px rgba(124,155,255,0.6);
+      }
+      .btn.primary:hover { filter: brightness(1.05); }
+
+      .stats { margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 640px; }
+      .stat {
+        padding: 16px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        border-radius: 16px;
+        backdrop-filter: blur(6px);
+      }
+      .stat b { display: block; font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
+      .stat span { font-size: 12px; color: var(--text-soft); }
+
+      .filters { margin: 56px 0 24px; display: flex; flex-direction: column; gap: 16px; }
+      .search { position: relative; }
+      .search input {
+        width: 100%;
+        padding: 14px 18px 14px 46px;
+        background: var(--surface);
+        border: 1px solid var(--border-strong);
+        border-radius: 14px;
+        color: var(--text);
+        font-size: 15px;
+        font-family: inherit;
+        outline: none;
+        transition: border-color 0.15s ease, background 0.15s ease;
+      }
+      .search input::placeholder { color: var(--text-dim); }
+      .search input:focus { border-color: var(--accent); background: var(--surface-hover); }
+      .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-dim); }
+      .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+      .chip {
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--text-soft);
+        font-size: 13px; font-weight: 500;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        user-select: none;
+        font-family: inherit;
+      }
+      .chip:hover { color: var(--text); border-color: var(--border-strong); }
+      .chip.active {
+        background: linear-gradient(135deg, rgba(124,155,255,0.2), rgba(176,132,255,0.2));
+        border-color: var(--accent);
+        color: var(--text);
+      }
+      .chip .count { margin-left: 6px; font-size: 11px; color: var(--text-dim); }
+      .chip.active .count { color: var(--accent); }
+
+      main { padding-bottom: 80px; }
+      .category { margin-top: 40px; }
+      .category h2 {
+        display: flex; align-items: center; gap: 10px;
+        margin: 0 0 16px;
+        font-size: 18px; font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+      .category h2 .icon {
+        width: 32px; height: 32px;
+        display: inline-flex; align-items: center; justify-content: center;
+        border-radius: 10px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        font-size: 16px;
+      }
+      .category h2 .num { margin-left: auto; font-size: 12px; font-weight: 500; color: var(--text-dim); }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 14px;
+      }
+      .card {
+        position: relative;
+        padding: 0;
+        border-radius: 16px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        transition: all 0.2s ease;
+        overflow: hidden;
+        display: flex; flex-direction: column;
+      }
+      .card::before {
+        content: "";
+        position: absolute; inset: 0;
+        background: radial-gradient(120% 80% at 100% 0%, rgba(124,155,255,0.08), transparent 60%);
+        opacity: 0; transition: opacity 0.25s ease;
+        pointer-events: none;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: var(--border-strong);
+        background: var(--surface-hover);
+        box-shadow: var(--shadow);
+      }
+      .card:hover::before { opacity: 1; }
+      .card-strip { height: 3px; }
+      .card-body { padding: 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+      .card .title-link { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+      .card .title {
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: -0.005em;
+        line-height: 1.4;
+      }
+      .card .title-link a.title { color: var(--text); }
+      .card .title-link a.title:hover { color: var(--accent); }
+      .card .exam {
+        font-size: 12px;
+        color: var(--text-soft);
+        line-height: 1.5;
+      }
+      .card .tag {
+        display: inline-block;
+        padding: 3px 8px; border-radius: 6px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid var(--border);
+        font-size: 11px;
+        color: var(--text-dim);
+        width: fit-content;
+      }
+      .card .stores {
+        display: flex; gap: 6px; flex-wrap: wrap;
+        margin-top: auto;
+        padding-top: 6px;
+      }
+      .store-btn {
+        display: inline-flex; align-items: center; gap: 5px;
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-size: 11.5px; font-weight: 600;
+        transition: transform 0.15s ease, filter 0.15s ease;
+        white-space: nowrap;
+      }
+      .store-btn:hover { transform: translateY(-1px); filter: brightness(1.1); }
+      .store-btn.ios { background: #0f1222; color: #fff; border: 1px solid var(--border-strong); }
+      .store-btn.gp  { background: linear-gradient(135deg, #34A853, #1e8e3e); color: #fff; }
+      .store-btn.web { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b1020; }
+
+      .empty { text-align: center; padding: 60px 20px; color: var(--text-dim); }
+
+      .seo-content {
+        margin-top: 80px;
+        padding: 32px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        border-radius: 20px;
+        color: var(--text-soft);
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      .seo-content .seo-h {
+        margin: 24px 0 8px;
+        color: var(--text);
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.005em;
+      }
+      .seo-content .seo-h:first-child { margin-top: 0; }
+      .seo-content strong { color: var(--text); font-weight: 600; }
+      .seo-content .faq { margin: 0; }
+      .seo-content .faq dt { margin-top: 14px; color: var(--text); font-weight: 600; }
+      .seo-content .faq dd { margin: 4px 0 0; padding-left: 0; }
+      @media (max-width: 620px) { .seo-content { padding: 22px; } }
+
+      footer { border-top: 1px solid var(--border); padding: 32px 0; color: var(--text-dim); font-size: 13px; }
+      .foot-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+      footer a:hover { color: var(--text); }
     </style>
 </head>
 <body>
-    <div class="hero">
-      <h1>資格試験 過去問 合格ドリル</h1>
-      <p>42種類の資格試験に対応した学習アプリ。過去問＋予想問題を全問解説付きで無料体験。</p>
-      <span class="badge">iOS / Android / Web 対応</span>
-    </div>
-    <div class="container">
-      <div class="grid">
-      <div class="card">
-        <div class="card-color" style="background:#1E40AF"></div>
-        <div class="card-body">
-          <h2><a href="/db_spec/">DB合格ドリル</a></h2>
-          <p class="exam-name">データベーススペシャリスト 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160543" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.dbquiz" class="store-btn gp">Google Play</a><a href="/db_spec/" class="store-btn web">Web版で体験</a></div>
+    <div class="aurora"></div>
+
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-name">Quiz<span>Factory</span></div>
         </div>
+        <nav class="nav-links">
+          <a href="#apps">アプリ一覧</a>
+          <a href="/privacy/">プライバシー</a>
+        </nav>
       </div>
-      <div class="card">
-        <div class="card-color" style="background:#16A34A"></div>
-        <div class="card-body">
-          <h2><a href="/mos/">Excel操作検定対策ドリル</a></h2>
-          <p class="exam-name">Excel操作検定 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160609" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.mosquiz" class="store-btn gp">Google Play</a><a href="/mos/" class="store-btn web">Web版で体験</a></div>
+    </header>
+
+    <section class="hero container">
+      <span class="eyebrow"><span class="dot"></span>42資格の過去問・予想問題に対応・無料</span>
+      <h1>資格試験の<span class="grad">過去問・予想問題</span>を、<br>スマホひとつで。</h1>
+      <p>宅建・簿記・FP・ITパスポート・基本情報・行政書士・社労士など、国家資格からビジネス・語学まで 42 種類の資格試験 過去問 & 予想問題ドリルを収録。iOS / Android / Web に対応し、全問解説付きで無料体験できます。</p>
+      <div class="hero-cta">
+        <a href="#apps" class="btn primary">過去問・予想問題を探す →</a>
+        <a href="/privacy/" class="btn">ポリシーを読む</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>42</b><span>過去問・予想問題</span></div>
+        <div class="stat"><b>全問</b><span>解説付き</span></div>
+        <div class="stat"><b>iOS/Android/Web</b><span>3プラットフォーム</span></div>
+      </div>
+    </section>
+
+    <main class="container" id="apps">
+      <div class="filters">
+        <div class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="q" type="search" placeholder="資格名で過去問・予想問題を検索 (例: 宅建、簿記、ITパスポート)" autocomplete="off">
         </div>
+        <div class="chips" id="chips"></div>
       </div>
-      <div class="card">
-        <div class="card-color" style="background:#5B21B6"></div>
-        <div class="card-body">
-          <h2><a href="/fp2/">FP2級 合格ドリル</a></h2>
-          <p class="exam-name">FP2級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161053" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.fp2quiz" class="store-btn gp">Google Play</a><a href="/fp2/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#7C3AED"></div>
-        <div class="card-body">
-          <h2><a href="/fp3/">FP3級 合格ドリル</a></h2>
-          <p class="exam-name">FP3級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160498" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.fp3quiz" class="store-btn gp">Google Play</a><a href="/fp3/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#7C3AED"></div>
-        <div class="card-body">
-          <h2><a href="/g_test/">G検定合格ドリル</a></h2>
-          <p class="exam-name">G検定 (JDLA) 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161928" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.gtestquiz" class="store-btn gp">Google Play</a><a href="/g_test/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1D4ED8"></div>
-        <div class="card-body">
-          <h2><a href="/ipass/">ITパスポート合格ドリル</a></h2>
-          <p class="exam-name">ITパスポート 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6760811187" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.ipassquiz" class="store-btn gp">Google Play</a><a href="/ipass/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#0C4A6E"></div>
-        <div class="card-body">
-          <h2><a href="/nw_spec/">NW合格ドリル</a></h2>
-          <p class="exam-name">ネットワークスペシャリスト 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160753" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.nwquiz" class="store-btn gp">Google Play</a><a href="/nw_spec/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1D4ED8"></div>
-        <div class="card-body">
-          <h2><a href="/es/">エンベデッドシステムスペシャリスト 合格ドリル</a></h2>
-          <p class="exam-name">エンベデッドシステムスペシャリスト 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6762442207" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.esquiz" class="store-btn gp">Google Play</a><a href="/es/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#9333EA"></div>
-        <div class="card-body">
-          <h2><a href="/care_mgr/">ケアマネ合格ドリル</a></h2>
-          <p class="exam-name">ケアマネジャー 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160881" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.caremgrquiz" class="store-btn gp">Google Play</a><a href="/care_mgr/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#0EA5E9"></div>
-        <div class="card-body">
-          <h2><a href="/toeic/">ビジネス英語テスト対策ドリル</a></h2>
-          <p class="exam-name">ビジネス英語テスト 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160666" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.toeicquiz" class="store-btn gp">Google Play</a><a href="/toeic/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1D4ED8"></div>
-        <div class="card-body">
-          <h2><a href="/bizlaw3/">ビジ法3級 合格ドリル</a></h2>
-          <p class="exam-name">ビジネス実務法務検定3級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160744" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.bizlaw3quiz" class="store-btn gp">Google Play</a><a href="/bizlaw3/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#6B21A8"></div>
-        <div class="card-body">
-          <h2><a href="/mankan/">マンション管理士合格ドリル</a></h2>
-          <p class="exam-name">マンション管理士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161003" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.mankanquiz" class="store-btn gp">Google Play</a><a href="/mankan/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#4338CA"></div>
-        <div class="card-body">
-          <h2><a href="/chusho/">中小企業診断士合格ドリル</a></h2>
-          <p class="exam-name">中小企業診断士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160300" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.chushoquiz" class="store-btn gp">Google Play</a><a href="/chusho/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#9333EA"></div>
-        <div class="card-body">
-          <h2><a href="/kaigo/">介護福祉士 合格ドリル</a></h2>
-          <p class="exam-name">介護福祉士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161960" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.kaigoquiz" class="store-btn gp">Google Play</a><a href="/kaigo/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#EA580C"></div>
-        <div class="card-body">
-          <h2><a href="/hoiku/">保育士 合格ドリル</a></h2>
-          <p class="exam-name">保育士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160480" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.hoikuquiz" class="store-btn gp">Google Play</a><a href="/hoiku/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#DC2626"></div>
-        <div class="card-body">
-          <h2><a href="/kiken4/">危険物乙4 合格ドリル</a></h2>
-          <p class="exam-name">危険物取扱者 乙種第4類 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160536" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.kiken4quiz" class="store-btn gp">Google Play</a><a href="/kiken4/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#0D9488"></div>
-        <div class="card-body">
-          <h2><a href="/fe/">基本情報技術者 合格ドリル</a></h2>
-          <p class="exam-name">基本情報技術者 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761068795" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.fequiz" class="store-btn gp">Google Play</a><a href="/fe/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#B45309"></div>
-        <div class="card-body">
-          <h2><a href="/takken/">宅建合格ドリル</a></h2>
-          <p class="exam-name">宅地建物取引士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761068822" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.takkenquiz" class="store-btn gp">Google Play</a><a href="/takken/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1E40AF"></div>
-        <div class="card-body">
-          <h2><a href="/ap/">応用情報技術者 合格ドリル</a></h2>
-          <p class="exam-name">応用情報技術者 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160433" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.apquiz" class="store-btn gp">Google Play</a><a href="/ap/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#4338CA"></div>
-        <div class="card-body">
-          <h2><a href="/sg/">情報セキュマネ 合格ドリル</a></h2>
-          <p class="exam-name">情報セキュリティマネジメント 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160709" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.sgquiz" class="store-btn gp">Google Play</a><a href="/sg/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#7F1D1D"></div>
-        <div class="card-body">
-          <h2><a href="/it_sec/">情報安全支援士合格ドリル</a></h2>
-          <p class="exam-name">情報処理安全確保支援士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160923" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.scquiz" class="store-btn gp">Google Play</a><a href="/it_sec/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1E3A5F"></div>
-        <div class="card-body">
-          <h2><a href="/nikkei/">日経TEST対策ドリル</a></h2>
-          <p class="exam-name">日経TEST 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161203" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.nikkeiquiz" class="store-btn gp">Google Play</a><a href="/nikkei/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#BE185D"></div>
-        <div class="card-body">
-          <h2><a href="/touroku/">登録販売者 合格ドリル</a></h2>
-          <p class="exam-name">登録販売者 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161168" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.tourokuquiz" class="store-btn gp">Google Play</a><a href="/touroku/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#BE185D"></div>
-        <div class="card-body">
-          <h2><a href="/kangoushi/">看護師合格ドリル</a></h2>
-          <p class="exam-name">看護師国家試験 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160698" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.kangoquiz" class="store-btn gp">Google Play</a><a href="/kangoushi/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1D4ED8"></div>
-        <div class="card-body">
-          <h2><a href="/shakaifukushi/">社会福祉士 合格ドリル</a></h2>
-          <p class="exam-name">社会福祉士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6762442188" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.shakaifukushiquiz" class="store-btn gp">Google Play</a><a href="/shakaifukushi/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#0369A1"></div>
-        <div class="card-body">
-          <h2><a href="/sharoshi/">社労士 合格ドリル</a></h2>
-          <p class="exam-name">社会保険労務士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161213" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.sharoshiquiz" class="store-btn gp">Google Play</a><a href="/sharoshi/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#BE123C"></div>
-        <div class="card-body">
-          <h2><a href="/hisho2/">秘書検定2級 合格ドリル</a></h2>
-          <p class="exam-name">秘書検定2級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161026" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.hisho2quiz" class="store-btn gp">Google Play</a><a href="/hisho2/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#065F46"></div>
-        <div class="card-body">
-          <h2><a href="/zeirishi/">税理士簿記論合格ドリル</a></h2>
-          <p class="exam-name">税理士 簿記論 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161256" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.zeirishiquiz" class="store-btn gp">Google Play</a><a href="/zeirishi/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#7C2D12"></div>
-        <div class="card-body">
-          <h2><a href="/kanri/">管理業務主任者合格ドリル</a></h2>
-          <p class="exam-name">管理業務主任者 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160976" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.kanriquiz" class="store-btn gp">Google Play</a><a href="/kanri/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#064E3B"></div>
-        <div class="card-body">
-          <h2><a href="/boki1/">簿記1級合格ドリル</a></h2>
-          <p class="exam-name">日商簿記1級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160381" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.boki1quiz" class="store-btn gp">Google Play</a><a href="/boki1/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#047857"></div>
-        <div class="card-body">
-          <h2><a href="/boki2/">簿記2級 合格ドリル</a></h2>
-          <p class="exam-name">日商簿記2級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160629" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.boki2quiz" class="store-btn gp">Google Play</a><a href="/boki2/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#059669"></div>
-        <div class="card-body">
-          <h2><a href="/boki3/">簿記3級 合格ドリル</a></h2>
-          <p class="exam-name">日商簿記3級 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160384" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.boki3quiz" class="store-btn gp">Google Play</a><a href="/boki3/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#2563EB"></div>
-        <div class="card-body">
-          <h2><a href="/eiken2/">英語2級レベル対策ドリル</a></h2>
-          <p class="exam-name">英語2級レベル 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160574" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.eiken2quiz" class="store-btn gp">Google Play</a><a href="/eiken2/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1D4ED8"></div>
-        <div class="card-body">
-          <h2><a href="/eiken3/">英語準2級レベル対策ドリル</a></h2>
-          <p class="exam-name">英語準2級レベル 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161021" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.eiken3quiz" class="store-btn gp">Google Play</a><a href="/eiken3/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#6D28D9"></div>
-        <div class="card-body">
-          <h2><a href="/gyosei/">行政書士 合格ドリル</a></h2>
-          <p class="exam-name">行政書士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160356" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.gyoseiquiz" class="store-btn gp">Google Play</a><a href="/gyosei/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#166534"></div>
-        <div class="card-body">
-          <h2><a href="/eisei/">衛生管理者 合格ドリル</a></h2>
-          <p class="exam-name">衛生管理者 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160546" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.eiseiquiz" class="store-btn gp">Google Play</a><a href="/eisei/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#78350F"></div>
-        <div class="card-body">
-          <h2><a href="/takken2/">調査士合格ドリル</a></h2>
-          <p class="exam-name">土地家屋調査士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160768" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.chousashiquiz" class="store-btn gp">Google Play</a><a href="/takken2/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#0F766E"></div>
-        <div class="card-body">
-          <h2><a href="/takkyo/">賃管士合格ドリル</a></h2>
-          <p class="exam-name">賃貸不動産経営管理士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161218" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.takkyoquiz" class="store-btn gp">Google Play</a><a href="/takkyo/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#1D4ED8"></div>
-        <div class="card-body">
-          <h2><a href="/chinkan/">賃貸不動産経営管理士 合格ドリル</a></h2>
-          <p class="exam-name">賃貸不動産経営管理士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6762442076" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.chinkanquiz" class="store-btn gp">Google Play</a><a href="/chinkan/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#0F766E"></div>
-        <div class="card-body">
-          <h2><a href="/unten/">運転免許 合格ドリル</a></h2>
-          <p class="exam-name">運転免許学科試験 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160841" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.untenquiz" class="store-btn gp">Google Play</a><a href="/unten/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#475569"></div>
-        <div class="card-body">
-          <h2><a href="/rikutoku/">陸特合格ドリル</a></h2>
-          <p class="exam-name">陸上特殊無線技士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761161266" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.rikutokuquiz" class="store-btn gp">Google Play</a><a href="/rikutoku/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-color" style="background:#B91C1C"></div>
-        <div class="card-body">
-          <h2><a href="/denki2/">電気工事士2種 合格ドリル</a></h2>
-          <p class="exam-name">第二種電気工事士 過去問・予想問題</p>
-          <p class="desc">全問解説付き。無料で体験できます。</p>
-          <div class="store-links"><a href="https://apps.apple.com/app/id6761160913" class="store-btn ios">App Store</a><a href="https://play.google.com/store/apps/details?id=com.quizfactory.denki2quiz" class="store-btn gp">Google Play</a><a href="/denki2/" class="store-btn web">Web版で体験</a></div>
-        </div>
-      </div>
-      </div>
-    </div>
+
+      <div id="results"></div>
+      <div id="empty" class="empty" hidden>該当する資格が見つかりませんでした。</div>
+
+      <section class="seo-content" aria-label="QuizFactory について">
+        <h2 class="seo-h">QuizFactory は、資格試験の過去問と予想問題を無料で解ける学習アプリ集です</h2>
+        <p>QuizFactory は、<strong>宅建・簿記・FP・ITパスポート・基本情報技術者・応用情報技術者・行政書士・社労士・ケアマネ・看護師・TOEIC・英検・危険物乙4・電気工事士2種</strong> など 42 種類の資格試験に対応した、<strong>過去問 & 予想問題ドリル</strong>を収録するオンライン学習サービスです。Web 版はインストール不要・会員登録不要で、<strong>すべての資格の過去問と予想問題を無料で体験</strong>できます。iOS / Android 版のネイティブアプリもストアで配信中です。</p>
+
+        <h3 class="seo-h">過去問で傾向を掴み、予想問題で本番力を磨く</h3>
+        <p>各資格ページでは、本試験で実際に出題された<strong>過去問</strong>と、最新の出題傾向を分析して作成した<strong>予想問題</strong>を一問一答形式で出題します。解答後すぐに解説が表示されるので、<strong>スキマ時間でも効率的に過去問演習と予想問題演習</strong>を両立できます。試験範囲を網羅した豊富な問題数で、苦手分野をつぶしながら合格ラインを目指せます。</p>
+
+        <h3 class="seo-h">よくある質問</h3>
+        <dl class="faq">
+          <dt>Q. 過去問・予想問題アプリは本当に無料で使えますか?</dt>
+          <dd>A. はい。Web 版は 42 資格すべての過去問・予想問題ドリルを無料で解けます。</dd>
+          <dt>Q. どんな資格の過去問・予想問題に対応していますか?</dt>
+          <dd>A. 宅建・簿記 (1〜3級)・FP (2・3級)・ITパスポート・基本情報・応用情報・情報セキュマネ・NW/DB/ES スペシャリスト・行政書士・社労士・中小企業診断士・ケアマネ・介護福祉士・保育士・看護師・社会福祉士・登録販売者・衛生管理者・TOEIC・英検・危険物乙4・運転免許・電気工事士2種 など 42 種類の資格試験 過去問・予想問題に対応しています。</dd>
+          <dt>Q. 過去問と予想問題の違いは?</dt>
+          <dd>A. 過去問は本試験で実際に出題された問題、予想問題は最新の出題傾向から作成したオリジナル問題です。両方を組み合わせることで、<strong>傾向把握</strong>と<strong>本番形式でのアウトプット練習</strong>を同時に進められます。</dd>
+          <dt>Q. スマホだけで過去問・予想問題を解けますか?</dt>
+          <dd>A. はい。スマートフォンのブラウザから各資格ページを開くだけで、すぐに過去問・予想問題演習を始められます。</dd>
+        </dl>
+      </section>
+    </main>
+
     <footer>
-      <p>&copy; 2026 Quiz Factory</p>
-      <p><a href="/privacy/">プライバシーポリシー</a></p>
+      <div class="container foot-inner">
+        <div>© 2026 Quiz Factory</div>
+        <div><a href="/privacy/">プライバシーポリシー</a></div>
+      </div>
     </footer>
+
+    <script>
+      const DATA = [
+        { cat:"it",        title:"DB合格ドリル",                     exam:"データベーススペシャリスト",       slug:"db_spec",       ios:"6761160543", gp:"com.quizfactory.dbquiz",            color:"#1E40AF" },
+        { cat:"it",        title:"Excel操作検定対策ドリル",          exam:"Excel操作検定",                     slug:"mos",           ios:"6761160609", gp:"com.quizfactory.mosquiz",           color:"#16A34A" },
+        { cat:"finance",   title:"FP2級 合格ドリル",                 exam:"FP2級",                             slug:"fp2",           ios:"6761161053", gp:"com.quizfactory.fp2quiz",           color:"#5B21B6" },
+        { cat:"finance",   title:"FP3級 合格ドリル",                 exam:"FP3級",                             slug:"fp3",           ios:"6761160498", gp:"com.quizfactory.fp3quiz",           color:"#7C3AED" },
+        { cat:"it",        title:"G検定合格ドリル",                  exam:"G検定 (JDLA)",                      slug:"g_test",        ios:"6761161928", gp:"com.quizfactory.gtestquiz",         color:"#7C3AED" },
+        { cat:"it",        title:"ITパスポート合格ドリル",           exam:"ITパスポート",                      slug:"ipass",         ios:"6760811187", gp:"com.quizfactory.ipassquiz",         color:"#1D4ED8" },
+        { cat:"it",        title:"NW合格ドリル",                     exam:"ネットワークスペシャリスト",        slug:"nw_spec",       ios:"6761160753", gp:"com.quizfactory.nwquiz",            color:"#0C4A6E" },
+        { cat:"it",        title:"エンベデッドシステム 合格ドリル",  exam:"エンベデッドシステムスペシャリスト", slug:"es",           ios:"6762442207", gp:"com.quizfactory.esquiz",            color:"#1D4ED8" },
+        { cat:"medical",   title:"ケアマネ合格ドリル",               exam:"ケアマネジャー",                    slug:"care_mgr",      ios:"6761160881", gp:"com.quizfactory.caremgrquiz",       color:"#9333EA" },
+        { cat:"language",  title:"ビジネス英語テスト対策ドリル",     exam:"ビジネス英語テスト",                slug:"toeic",         ios:"6761160666", gp:"com.quizfactory.toeicquiz",         color:"#0EA5E9" },
+        { cat:"law",       title:"ビジ法3級 合格ドリル",             exam:"ビジネス実務法務検定3級",           slug:"bizlaw3",       ios:"6761160744", gp:"com.quizfactory.bizlaw3quiz",       color:"#1D4ED8" },
+        { cat:"realestate",title:"マンション管理士合格ドリル",       exam:"マンション管理士",                  slug:"mankan",        ios:"6761161003", gp:"com.quizfactory.mankanquiz",        color:"#6B21A8" },
+        { cat:"law",       title:"中小企業診断士合格ドリル",         exam:"中小企業診断士",                    slug:"chusho",        ios:"6761160300", gp:"com.quizfactory.chushoquiz",        color:"#4338CA" },
+        { cat:"medical",   title:"介護福祉士 合格ドリル",            exam:"介護福祉士",                        slug:"kaigo",         ios:"6761161960", gp:"com.quizfactory.kaigoquiz",         color:"#9333EA" },
+        { cat:"medical",   title:"保育士 合格ドリル",                exam:"保育士",                            slug:"hoiku",         ios:"6761160480", gp:"com.quizfactory.hoikuquiz",         color:"#EA580C" },
+        { cat:"other",     title:"危険物乙4 合格ドリル",             exam:"危険物取扱者 乙種第4類",            slug:"kiken4",        ios:"6761160536", gp:"com.quizfactory.kiken4quiz",        color:"#DC2626" },
+        { cat:"it",        title:"基本情報技術者 合格ドリル",        exam:"基本情報技術者",                    slug:"fe",            ios:"6761068795", gp:"com.quizfactory.fequiz",            color:"#0D9488" },
+        { cat:"realestate",title:"宅建合格ドリル",                   exam:"宅地建物取引士",                    slug:"takken",        ios:"6761068822", gp:"com.quizfactory.takkenquiz",        color:"#B45309" },
+        { cat:"it",        title:"応用情報技術者 合格ドリル",        exam:"応用情報技術者",                    slug:"ap",            ios:"6761160433", gp:"com.quizfactory.apquiz",            color:"#1E40AF" },
+        { cat:"it",        title:"情報セキュマネ 合格ドリル",        exam:"情報セキュリティマネジメント",      slug:"sg",            ios:"6761160709", gp:"com.quizfactory.sgquiz",            color:"#4338CA" },
+        { cat:"it",        title:"情報安全支援士合格ドリル",         exam:"情報処理安全確保支援士",            slug:"it_sec",        ios:"6761160923", gp:"com.quizfactory.scquiz",            color:"#7F1D1D" },
+        { cat:"law",       title:"日経TEST対策ドリル",               exam:"日経TEST",                          slug:"nikkei",        ios:"6761161203", gp:"com.quizfactory.nikkeiquiz",        color:"#1E3A5F" },
+        { cat:"medical",   title:"登録販売者 合格ドリル",            exam:"登録販売者",                        slug:"touroku",       ios:"6761161168", gp:"com.quizfactory.tourokuquiz",       color:"#BE185D" },
+        { cat:"medical",   title:"看護師合格ドリル",                 exam:"看護師国家試験",                    slug:"kangoushi",     ios:"6761160698", gp:"com.quizfactory.kangoquiz",         color:"#BE185D" },
+        { cat:"medical",   title:"社会福祉士 合格ドリル",            exam:"社会福祉士",                        slug:"shakaifukushi", ios:"6762442188", gp:"com.quizfactory.shakaifukushiquiz", color:"#1D4ED8" },
+        { cat:"law",       title:"社労士 合格ドリル",                exam:"社会保険労務士",                    slug:"sharoshi",      ios:"6761161213", gp:"com.quizfactory.sharoshiquiz",      color:"#0369A1" },
+        { cat:"law",       title:"秘書検定2級 合格ドリル",           exam:"秘書検定2級",                       slug:"hisho2",        ios:"6761161026", gp:"com.quizfactory.hisho2quiz",        color:"#BE123C" },
+        { cat:"finance",   title:"税理士簿記論合格ドリル",           exam:"税理士 簿記論",                     slug:"zeirishi",      ios:"6761161256", gp:"com.quizfactory.zeirishiquiz",      color:"#065F46" },
+        { cat:"realestate",title:"管理業務主任者合格ドリル",         exam:"管理業務主任者",                    slug:"kanri",         ios:"6761160976", gp:"com.quizfactory.kanriquiz",         color:"#7C2D12" },
+        { cat:"finance",   title:"簿記1級合格ドリル",                exam:"日商簿記1級",                       slug:"boki1",         ios:"6761160381", gp:"com.quizfactory.boki1quiz",         color:"#064E3B" },
+        { cat:"finance",   title:"簿記2級 合格ドリル",               exam:"日商簿記2級",                       slug:"boki2",         ios:"6761160629", gp:"com.quizfactory.boki2quiz",         color:"#047857" },
+        { cat:"finance",   title:"簿記3級 合格ドリル",               exam:"日商簿記3級",                       slug:"boki3",         ios:"6761160384", gp:"com.quizfactory.boki3quiz",         color:"#059669" },
+        { cat:"language",  title:"英語2級レベル対策ドリル",          exam:"英語2級レベル",                     slug:"eiken2",        ios:"6761160574", gp:"com.quizfactory.eiken2quiz",        color:"#2563EB" },
+        { cat:"language",  title:"英語準2級レベル対策ドリル",        exam:"英語準2級レベル",                   slug:"eiken3",        ios:"6761161021", gp:"com.quizfactory.eiken3quiz",        color:"#1D4ED8" },
+        { cat:"law",       title:"行政書士 合格ドリル",              exam:"行政書士",                          slug:"gyosei",        ios:"6761160356", gp:"com.quizfactory.gyoseiquiz",        color:"#6D28D9" },
+        { cat:"medical",   title:"衛生管理者 合格ドリル",            exam:"衛生管理者",                        slug:"eisei",         ios:"6761160546", gp:"com.quizfactory.eiseiquiz",         color:"#166534" },
+        { cat:"realestate",title:"調査士合格ドリル",                 exam:"土地家屋調査士",                    slug:"takken2",       ios:"6761160768", gp:"com.quizfactory.chousashiquiz",     color:"#78350F" },
+        { cat:"realestate",title:"賃管士合格ドリル",                 exam:"賃貸不動産経営管理士",              slug:"takkyo",        ios:"6761161218", gp:"com.quizfactory.takkyoquiz",        color:"#0F766E" },
+        { cat:"realestate",title:"賃貸不動産経営管理士 合格ドリル",  exam:"賃貸不動産経営管理士",              slug:"chinkan",       ios:"6762442076", gp:"com.quizfactory.chinkanquiz",       color:"#1D4ED8" },
+        { cat:"other",     title:"運転免許 合格ドリル",              exam:"運転免許学科試験",                  slug:"unten",         ios:"6761160841", gp:"com.quizfactory.untenquiz",         color:"#0F766E" },
+        { cat:"other",     title:"陸特合格ドリル",                   exam:"陸上特殊無線技士",                  slug:"rikutoku",      ios:"6761161266", gp:"com.quizfactory.rikutokuquiz",      color:"#475569" },
+        { cat:"other",     title:"電気工事士2種 合格ドリル",         exam:"第二種電気工事士",                  slug:"denki2",        ios:"6761160913", gp:"com.quizfactory.denki2quiz",        color:"#B91C1C" },
+      ];
+
+      const CATEGORIES = [
+        { id: "all",        label: "すべて",         icon: "✨" },
+        { id: "it",         label: "IT・情報",       icon: "💻" },
+        { id: "finance",    label: "金融・会計",     icon: "💰" },
+        { id: "realestate", label: "不動産",         icon: "🏠" },
+        { id: "law",        label: "法律・ビジネス", icon: "⚖️" },
+        { id: "medical",    label: "医療・福祉",     icon: "🏥" },
+        { id: "language",   label: "語学",           icon: "🌏" },
+        { id: "other",      label: "その他",         icon: "🛠️" },
+      ];
+
+      const state = { cat: "all", q: "" };
+      const chipsEl = document.getElementById("chips");
+      const resultsEl = document.getElementById("results");
+      const emptyEl = document.getElementById("empty");
+      const qEl = document.getElementById("q");
+
+      function counts() {
+        const m = { all: DATA.length };
+        for (const d of DATA) m[d.cat] = (m[d.cat] || 0) + 1;
+        return m;
+      }
+
+      function renderChips() {
+        const c = counts();
+        chipsEl.innerHTML = CATEGORIES.map(cat => `
+          <button class="chip ${state.cat === cat.id ? "active" : ""}" data-cat="${cat.id}">
+            ${cat.icon} ${cat.label}<span class="count">${c[cat.id] || 0}</span>
+          </button>
+        `).join("");
+        chipsEl.querySelectorAll(".chip").forEach(el => {
+          el.addEventListener("click", () => {
+            state.cat = el.dataset.cat;
+            renderChips();
+            renderResults();
+          });
+        });
+      }
+
+      function cardHtml(d, catLabel) {
+        return `
+          <div class="card">
+            <div class="card-strip" style="background:${d.color}"></div>
+            <div class="card-body">
+              <div class="title-link">
+                <a class="title" href="/${d.slug}/">${d.title}</a>
+              </div>
+              <div class="exam">${d.exam} 過去問・予想問題</div>
+              <span class="tag">${catLabel}</span>
+              <div class="stores">
+                <a class="store-btn ios" href="https://apps.apple.com/app/id${d.ios}" aria-label="${d.exam} App Store">App Store</a>
+                <a class="store-btn gp"  href="https://play.google.com/store/apps/details?id=${d.gp}" aria-label="${d.exam} Google Play">Google Play</a>
+                <a class="store-btn web" href="/${d.slug}/" aria-label="${d.exam} Web版で過去問・予想問題を解く">Web版で体験</a>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderResults() {
+        const q = state.q.trim().toLowerCase();
+        const filtered = DATA.filter(d =>
+          (state.cat === "all" || d.cat === state.cat) &&
+          (q === "" || d.title.toLowerCase().includes(q) || d.exam.toLowerCase().includes(q))
+        );
+
+        if (filtered.length === 0) {
+          resultsEl.innerHTML = "";
+          emptyEl.hidden = false;
+          return;
+        }
+        emptyEl.hidden = true;
+
+        const grouped = {};
+        for (const d of filtered) (grouped[d.cat] ||= []).push(d);
+
+        const html = CATEGORIES.filter(c => c.id !== "all" && grouped[c.id]).map(c => `
+          <section class="category">
+            <h2>
+              <span class="icon">${c.icon}</span>
+              ${c.label}
+              <span class="num">${grouped[c.id].length} 件</span>
+            </h2>
+            <div class="grid">
+              ${grouped[c.id].map(d => cardHtml(d, c.label)).join("")}
+            </div>
+          </section>
+        `).join("");
+
+        resultsEl.innerHTML = html;
+      }
+
+      qEl.addEventListener("input", (e) => {
+        state.q = e.target.value;
+        renderResults();
+      });
+
+      renderChips();
+      renderResults();
+    </script>
 </body>
 </html>
